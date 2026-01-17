@@ -10,7 +10,7 @@ class BaseAPI:
     def __init__(self, headers=None):
         self.base_url = "https://favqs.com/api"
         self.headers = headers or {
-            "Authorization": f"Token token={os.getenv("FAVQS_TOKEN")}",
+            "Authorization": f"Token token={os.getenv('FAVQS_TOKEN')}",
             "Content-Type": "application/json",
             "Accept": "application/json",
         }
